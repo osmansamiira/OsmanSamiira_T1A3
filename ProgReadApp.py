@@ -1,5 +1,6 @@
 Book = {}
 
+# function to display the menu
 def print_menu():
     print ("""Choose a number:
     1. Add a book
@@ -9,7 +10,7 @@ def print_menu():
     5. Delete a book
     """)
 
-
+# function to display all books in the list
 def display_book():
     print("Name\t\tBook Progress")
     for key in Book: 
