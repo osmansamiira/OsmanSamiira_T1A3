@@ -21,9 +21,7 @@ while(True):
     elif response == 3: 
         print("All your current books")
     elif response == 4:
-        print("My Wishlist")
-    elif response == 5:
-        ("Deleting a book")
+        print("Deleting a book")
     else: 
         print("Enjoy your reading")
         break
