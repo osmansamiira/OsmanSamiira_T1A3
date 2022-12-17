@@ -1,4 +1,8 @@
+import os
+from functions import add_book, search_book, display_book, update_book, delete_book
+import datetime
 Book = {}
+now = datetime.datetime()
 
 # function to display the menu
 def print_menu():
@@ -8,23 +12,20 @@ def print_menu():
     3. View all books
     4. Update a book
     5. Delete a book
+    6. Exit from app
     """)
-
-# function to display all books in the list
-def display_book():
-    print("Name\t\tBook Progress")
-    for key in Book: 
-        print("{}\t\t{}".format(key,Book.get(key)))
 
 print("Welcome to ProgRead, your personal reading tracker")
 while(True): 
     print_menu()
-    response = int(input())
+    try:
+        response = int(input())
+    except ValueError: 
+        print("Invalid input. Please enter a number.")
+        response = int(input())
     if response == 1:
         print("Add a book")
-        name = input("Enter the book name:")
-        progress = input("Enter number of pages read:")
-        Book[name] = progress
+        add_book
     elif response == 2:
         search_name = input("Enter the book name")
         if search_name in Book: 
@@ -54,6 +55,7 @@ while(True):
             display_book()
         else: 
             print("Book is not found in the list")
-    else:
-        print("Have fun reading, we hope to see you again soon!") 
+    elif response == 6: 
+        print("Have fun reading, we hope to see you again soon!")
+       
         
