@@ -2,20 +2,25 @@ Book = {}
 
 # function to add book
 def add_book(): 
-    name = input("Enter the book name:")
-    progress = input("Enter number of pages read:")
+    name = input("Enter the book name: ")
+    progress = input("Enter number of pages read: ")
     Book[name] = progress
 
 # function to search for a book
 def search_book(): 
-    search_name = input("Enter the book name")
+    search_name = input("Enter the book name: ")
     if search_name in Book: 
             print(search_name, "'s progress is", Book[search_name])
+    else: 
+            print("Book is not found in the list")
 
 
 # function to display all books in the list
 def display_book():
-    print("Name\t\tBook Progress")
+    if not Book: 
+        print("Empty book list") 
+    else:
+       print("Name\t\tBook Progress")
     for key in Book: 
         print("{}\t\t{}".format(key,Book.get(key)))
 
@@ -28,6 +33,8 @@ def update_book():
             Book[edit_book]=progress
             print("Progress updated")
             display_book()
+    else: 
+            print("Book is not found in the list")
 
 # function to delete a book in the list 
 def delete_book(): 
@@ -37,3 +44,5 @@ def delete_book():
             if confirm == 'y' or confirm == 'Y':
                 Book.pop(del_book)
             display_book()
+    else: 
+            print("Book is not found in the list")
