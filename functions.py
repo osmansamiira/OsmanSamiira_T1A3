@@ -27,9 +27,9 @@ def display_book():
 
 # function to update a boook in the list 
 def update_book(): 
-    edit_book = input("Enter the book name to updated")
+    edit_book = input("Enter the book name to updated: ")
     if edit_book in Book: 
-            progress = input("Enter the updated progress")
+            progress = input("Enter the updated progress: ")
             Book[edit_book]=progress
             print("Progress updated")
             display_book()
@@ -38,7 +38,7 @@ def update_book():
 
 # function to delete a book in the list 
 def delete_book(): 
-    del_book = input("Enter the book to be deleted")
+    del_book = input("Enter the book to be deleted: ")
     if del_book in Book: 
             confirm = input("Do you want to delete this book y/n?")
             if confirm == 'y' or confirm == 'Y':
