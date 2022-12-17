@@ -1,8 +1,8 @@
 import os
 from functions import add_book, search_book, display_book, update_book, delete_book
-import datetime
 Book = {}
-now = datetime.datetime()
+
+
 
 # function to display the menu
 def print_menu():
