@@ -1,12 +1,11 @@
-import os
+from os import system 
+clear = lambda: system('cls')
 from functions import add_book, search_book, display_book, update_book, delete_book
 Book = {}
 
-
-
 # function to display the menu
 def print_menu():
-    print ("""Choose a number:
+    print ("""Choose an option:
     1. Add a book
     2. Search for a book
     3. View all books
@@ -16,46 +15,29 @@ def print_menu():
     """)
 
 print("Welcome to ProgRead, your personal reading tracker")
-while(True): 
-    print_menu()
+while (True): 
+    option = print_menu()
+    #error handling if a number isn't chosen
     try:
-        response = int(input())
+        option = int(input())
     except ValueError: 
-        print("Invalid input. Please enter a number.")
-        response = int(input())
-    if response == 1:
+        print("Invalid option. Please enter a number between 1-6.")
+        option = int(input())
+    if option == 1:
         print("Add a book")
-        add_book
-    elif response == 2:
-        search_name = input("Enter the book name")
-        if search_name in Book: 
-            print(search_name, "'s progress is", Book[search_name])
-        else: 
-            print("Book is not found in the list")
-    elif response == 3: 
-       if not Book: 
-        print("Empty book list") 
-       else: 
+        add_book()
+    elif option == 2:
+        search_book()
+    elif option == 3:  
         display_book()
-    elif response == 4: 
-        edit_book = input("Enter the book name to updated")
-        if edit_book in Book: 
-            progress = input("Enter the updated progress")
-            Book[edit_book]=progress
-            print("Progress updated")
-            display_book()
-        else: 
-            print("Book is not found in the list")
-    elif response == 5:
-        del_book = input("Enter the book to be deleted")
-        if del_book in Book: 
-            confirm = input("Do you want to delete this book y/n?")
-            if confirm == 'y' or confirm == 'Y':
-                Book.pop(del_book)
-            display_book()
-        else: 
-            print("Book is not found in the list")
-    elif response == 6: 
+    elif option == 4: 
+        update_book()
+    elif option == 5:
+        delete_book() 
+    elif option == 6: 
         print("Have fun reading, we hope to see you again soon!")
+    else: 
+        print("Invalid option. Please enter a number between 1-6.")
+        
        
         
