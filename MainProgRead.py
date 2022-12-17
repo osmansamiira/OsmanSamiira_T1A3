@@ -1,7 +1,10 @@
 from os import system 
-clear = lambda: system('cls')
+import webbrowser
+import csv
+import pandas as pd
 from functions import add_book, search_book, display_book, update_book, delete_book
 Book = {}
+wishlist = {}
 
 # function to display the menu
 def print_menu():
@@ -11,7 +14,7 @@ def print_menu():
     3. View all books
     4. Update a book
     5. Delete a book
-    6. Exit from app
+    6. View Amazon wishlist
     """)
 
 print("Welcome to ProgRead, your personal reading tracker")
@@ -35,9 +38,5 @@ while (True):
     elif option == 5:
         delete_book() 
     elif option == 6: 
-        print("Have fun reading, we hope to see you again soon!")
-    else: 
-        print("Invalid option. Please enter a number between 1-6.")
-        
-       
-        
+         df= pd.read_csv('./wishlist.csv')
+         print(df.to_string()) 
