@@ -1,10 +1,10 @@
+import os 
 from os import system 
 import csv
 from csv import writer
 import pandas as pd
 from functions import add_book, search_book, display_book, update_book, delete_book, view_wishlist, add_wishlist
 Book = {}
-wishlist = {}
 
 # function to display the menu options
 def print_menu():
