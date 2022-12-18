@@ -116,6 +116,7 @@ Once you've added a book, select option **7** to view these books in your wishli
 
 ## Manual Testing 
 
+![image](./docs/Manual%20Error%20Testing.JPG)
 
 
 
