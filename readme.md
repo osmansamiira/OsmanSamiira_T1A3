@@ -12,5 +12,5 @@ Progread is designed for avid readers who often find themselves losing track of 
 
 The features which are present in this app include: 
 
-### 
+_**- Add a book**_
 
