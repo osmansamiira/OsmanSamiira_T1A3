@@ -17,14 +17,14 @@ def print_menu():
     print("7. View my wishlist")
     print("8. Return to menu")
     print("9. Exit app")
-    opt = input("Choose your option (1-8): ")
+    opt = input("Choose your option (1-9): ")
     return opt
 
 
 option = ""
     
 print("- Welcome to ProgRead, your personal reading tracker -")
-while option != "8":
+while option != "9":
     option = print_menu() 
     if option == "1":
         print("Add a book")

@@ -18,19 +18,23 @@ def add_book():
 def search_book(): 
     search_name = input("Enter the book name: ")
     if search_name in Book: 
-            print(search_name, "'s progress is", Book[search_name])
+            print(search_name,"'s progress is", Book[search_name])
+            print("Select 8 to return to menu")
     else: 
             print("Book is not found in the list")
+            print("Select 8 to return to menu")
 
 
 # function to display all books in the list
 def display_book():
     if not Book: 
         print("Empty book list") 
+        print("Select 8 to return to menu")
     else:
        print("Name\t\tBook Progress")
     for key in Book: 
         print("{}\t\t{}".format(key,Book.get(key)))
+        print("Select 8 to return to menu")
 
 
 # function to update a boook in the list 
@@ -43,6 +47,7 @@ def update_book():
             display_book()
     else: 
             print("Book is not found in the list")
+            print("Select 8 to return to menu")
 
 # function to delete a book in the list 
 def delete_book(): 
@@ -54,6 +59,7 @@ def delete_book():
             display_book()
     else: 
             print("Book is not found in the list")
+            print("Select 8 to return to menu")
 
 # function to view wishlist 
 def view_wishlist(): 
@@ -64,21 +70,22 @@ def view_wishlist():
      print('*********************')
      print(df.to_string (index=False))
      print('')
+     
 
 # function to add to Amazon wishlist 
-def NumberOfBooks(): 
-    int(input("Please enter how many books you wish to add: "))
-    
 def add_wishlist(): 
      with open('amazonbookswishlist.csv', 'w+') as file: 
         myfile = csv.writer(file)
         myfile.writerow(["Book Name", "Amazon Link"])
-        option = NumberOfBooks()
-        for i in range (option): 
-           BookName = input("Please enter the name of the book: ")
-           AmazonLink = input("Please enter the Amazon link: ")
-           myfile.writerow([BookName, AmazonLink])
-       
+        noOfBooks = int(input("Please enter how many books you would like to add: "))
+        # create a loop for number of books input
+        for i in range (noOfBooks): 
+            BookName = input("Book" + str(i +  1) + " : Please enter the name of the book: ")
+            AmazonLink = input("Book" + str(i +  1) + " : Please enter the Amazon link: ") 
+            print("Books have been added")
+            print("Select 8 to return to menu")
+        myfile.writerow([BookName, AmazonLink])
+
 
        
 
