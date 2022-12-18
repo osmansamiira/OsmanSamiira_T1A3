@@ -58,7 +58,7 @@ _Option 1:_
 
 Once you've selected 1, the following should appear: 
 
-![image](./pictures/addbookfeature.JPG)
+![addbookfeature](https://user-images.githubusercontent.com/115801257/208289223-37cb8b63-ed8b-4f89-a780-8b21f22e68b9.JPG)
 
 - Enter both the book name and number of pages
 - Once the message reads "book has been successfully added" then hit **8** to return back to the menu 
@@ -67,17 +67,17 @@ _Option 2:_
 
 **2** allows you to search for a book. If you haven't added any books to the list, the following will appear: 
 
-![image](./pictures/searchwnobook.JPG)
+![searchwnobook](https://user-images.githubusercontent.com/115801257/208289253-aa11aa23-f409-4bba-98d4-36ab3096a1de.JPG)
 
 However, once you've added a book to the list, the following will appear: 
 
-![image](./pictures/searchwbook.JPG)
+![searchwbook](https://user-images.githubusercontent.com/115801257/208289240-a5ac8a85-9c5b-4f98-82fc-c09a255403a8.JPG)
 
 _Option 3:_
 
 **3** allows you to view all the books you've added so far: 
 
-![image](./pictures/displaybooksfeature.JPG)
+![displaybooksfeature](https://user-images.githubusercontent.com/115801257/208289264-43234962-044c-4d5a-9db9-48f8342554d3.JPG)
 
 _Option 4:_
 
@@ -85,7 +85,7 @@ This features allows you to update a book that is currently on your reading list
 
 Once you enter which book to update, hit enter and the change will be reflected in the list. 
 
-![image](./pictures/updatedbook.JPG)
+![updatedbook](https://user-images.githubusercontent.com/115801257/208289270-3a1329fe-9af0-4de3-9b44-facfae04548f.JPG)
 
 _Option 5:_
 
@@ -96,7 +96,7 @@ Then a confirmation should appear: select **y** if you wish to delete this book 
 
 If this was the only book on your list the list will now show up as empty. 
 
-![image](./pictures/deleteconfirmfeature.JPG)
+![deleteconfirmfeature](https://user-images.githubusercontent.com/115801257/208289278-9db9db5b-f6d2-4bdd-b9f9-abbd24983490.JPG)
 
 _Option 6&7:_
 
@@ -106,11 +106,12 @@ The app will then ask how many books you wish to add to the wishlist, followed b
 
 After this, hit enter and the books have been added to the list.
 
-![image](./pictures/addtowishlist.JPG)
+![addtowishlist](https://user-images.githubusercontent.com/115801257/208289292-61ea9717-42ad-48a1-8d08-3589012fc2e6.JPG)
 
 Once you've added a book, select option **7** to view these books in your wishlist: 
 
-![image](./pictures/viewwishlist.JPG)
+![viewwishlist](https://user-images.githubusercontent.com/115801257/208289306-79bd7fc4-e761-45e9-b2f2-ce4fa373e44b.JPG)
+
 
 
 ## Manual Testing 
