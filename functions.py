@@ -12,8 +12,6 @@ def add_book():
     print("Select 8 to return to menu")
     Book[name] = progress
     
-
-
 # function to search for a book
 def search_book(): 
     search_name = input("Enter the book name: ")
@@ -70,6 +68,7 @@ def view_wishlist():
      print('*********************')
      print(df.to_string (index=False))
      print('')
+     print("Select 8 to return to menu")
      
 
 # function to add to Amazon wishlist 
@@ -82,9 +81,10 @@ def add_wishlist():
         for i in range (noOfBooks): 
             BookName = input("Book" + str(i +  1) + " : Please enter the name of the book: ")
             AmazonLink = input("Book" + str(i +  1) + " : Please enter the Amazon link: ") 
-            print("Books have been added")
-            print("Select 8 to return to menu")
-        myfile.writerow([BookName, AmazonLink])
+            myfile.writerow([BookName, AmazonLink])
+        print("Books have been added")
+        print("Select 8 to return to menu")
+        
 
 
        
