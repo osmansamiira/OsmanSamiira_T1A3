@@ -50,7 +50,7 @@ These are additional features which allow users to add in any books that they ar
 
 **How to use the features:**
 
-![image](./menufeature.JPG)
+![menufeature](https://user-images.githubusercontent.com/115801257/208289334-f6012107-4a97-4173-8cc6-c0a469cce57a.JPG)
 
 Once the main menu has been opened, select an option to proceed. 
 
