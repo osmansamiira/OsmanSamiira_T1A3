@@ -4,9 +4,9 @@ Progread is designed for avid readers who often find themselves losing track of 
 
 **Name:** Samiira Osman
 
-**Repository Link:**
+**Repository Link:** https://github.com/osmansamiira/OsmanSamiira_T1A3
 
-**Presentation link:**
+**Presentation link:** https://drive.google.com/file/d/12SCxy0KXoP2przehYNwRdaJJAyqAsj1l/view
 
 ## Features
 
